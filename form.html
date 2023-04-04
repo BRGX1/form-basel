@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            body{
+                font-family: Rockwell ;
+            }
+            p{
+                border-radius: 5px; padding: 5px;
+                background-color:#038ba3;
+                color: #ffffff;
+            }
+            fieldset{ border-radius: 7px; padding: 5px; min-height:150px; border:8px solid #038ba3; background-color:#eeece1;
+            }
+        </style>
+        <head>
+            <title>Form</title>
+        </head>
+        <body align="center">
+            <fieldset>
+                <legend>İletişim Formu</legend>
+                <p>Talebini aşağıdaki formu doldurarak Müşteri İlişkileri Takımı'mızla bağlantı kurarak iletebilirsin!</p>
+                <form action="mailto:basek223@gmail.com">
+                    <div>
+                        <label style="color:rgb(0, 0, 0);font-size:12px;" for="as"> Ad Soyadı</label><br>
+                        <input placeholder="Ad soyadınız giriniz" id="as" type="text" required><br>
+                        <label style="color:rgb(0, 0, 0);font-size:12px;" for="ep">E-Posta</label><br>
+                        <input placeholder="E-postanınız giriniz" id="ep" type="email" required><br>
+                        <label style="color:rgb(0, 0, 0);font-size:12px;" for="cp">Cep Telefonu</label><br>
+                        <input placeholder="Cep telefonuz giriniz" id="cp" type="tel" required><br>
+                        <label style="color:rgb(0, 0, 0);font-size:12px;" for="ss">Sipariş Seç</label><br>
+                        <select name="Sipariş Seç" id="ss"><br>
+                            <option style="color:rgb(0, 0, 0);font-size:12px;" value="Sipariş Seç">Sipariş Seç</option>
+                            <option style="color:rgb(0, 0, 0);font-size:12px;" value="SU385692 - 25 Mar 2023">SU385692 - 25 Mar 2023</option>
+                        </select><br>
+                        <label  style="color:rgb(0, 0, 0);font-size:12px;" for="tak">Talep - Ana Kategori</label><br>
+                        <select name="Talep - Ana Kategori" id="tak">
+                            <option value="Sipariş Durumu Sorgulama">Sipariş Durumu Sorgulama</option>
+                            <option value="İade ve Değişim Telebi">İade ve Değişim Telebi</option>
+                            <option value="Sipariş İptali Talebi">Sipariş İptali Talebi</option>
+                            <option value="Kampanya ve Ürünler Hakkında Bilgi">Kampanya ve Ürünler Hakkında Bilgi</option>
+                            <option value="Ürün İnceleme ve Garanti Süresi">Ürün İnceleme ve Garanti Süresi</option>
+                            <option value="Sneaks Up Mağazaları Hakıkında">Sneaks Up Mağazaları Hakıkında</option>
+                            <option value="Sipariş Oluşturma ve Ödeme Konuları">Sipariş Oluşturma ve Ödeme Konuları</option>
+                            <option value="Diğer Konular">Diğer Konular</option>
+                        </select><br><br>
+                        <input id="ko" type="text" placeholder="Konu" style="height: 1cm; width: 4cm;"><br><br>
+                        <input id="aç" type="text" placeholder="Açıklama" style="height: 2cm; width: 6cm;">
+                    </div>
+                    <input type="submit" value="Gönder">
+                </form>
+            </fieldset>
+        </body>
+    </body>
+</html{}>
